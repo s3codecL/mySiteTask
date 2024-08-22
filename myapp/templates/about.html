@@ -1,6 +1,10 @@
-<h1>About</h1>
+{% extends 'layouts/base.html' %}
 
-<p>Lorem30 ipsum dolor sit amet, consectetur adipisicing elit.
+{% block content %}
+
+    <h1>About</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     Adipisci alias amet animi aperiam aspernatur atque aut autem
     beatae commodi consequatur corporis cumque cupiditate delectus
     doloremque doloribus ducimus ea eius eligendi eos error est eum
@@ -15,3 +19,5 @@
     voluptatem voluptatum.</p>
 
 <p>Website created by {{ username }} </p>
+
+{% endblock %}
