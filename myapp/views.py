@@ -6,8 +6,10 @@ from .forms import CreateNewTask, CreateNewProject
 # Create your views here.
 def index(request):
     title = 'Welcome to Django! My Site Task'
+    username = 's3codecL'
     return render(request, 'index.html', {
-        'title': title
+        'title': title,
+        'username': username
     })
 def hello(request, username):
     print(type(username))
@@ -19,23 +21,29 @@ def about(request):
     })
 
 def projects(request):
+    username = 's3codecL'
     #projects = list(Project.objects.values())
     projects = Project.objects.all()
     return render(request, 'project/projects.html', {
-        'projects': projects
+        'projects': projects,
+        'username': username
     })
 
 def tasks(request):
+    username = 's3codecL'
     #task = get_object_or_404(Task, title=title)
     tasks = Task.objects.all()
     return render(request, 'task/task.html', {
-        'tasks': tasks
+        'tasks': tasks,
+        'username': username
     })
 
 def create_task(request):
+    username = 's3codecL'
     if request.method == 'GET':
         return render(request, 'task/create_task.html', {
-            'form': CreateNewTask()
+            'form': CreateNewTask(),
+            'username': username
         })
     else:
         Task.objects.create(title=request.POST['title'],
@@ -44,9 +52,11 @@ def create_task(request):
 
 
 def create_project(request):
+    username = 's3codecL'
     if request.method == 'GET':
         return render(request, 'project/create_project.html', {
-            'form': CreateNewProject()
+            'form': CreateNewProject(),
+            'username': username
         })
     else:
         Project.objects.create(name=request.POST['name'])
@@ -59,4 +69,10 @@ def project_detail(request, id):
     return render(request, 'project/detail.html', {
         'project': project,
         'tasks': tasks
+    })
+
+def footer(request):
+    username = 's3codecL'
+    return render(request, 'layouts/footer.html', {
+        'username': username
     })

@@ -4,24 +4,27 @@
 
 <div class="container mt-4">
     <h1 class="text-center">Task</h1>
-
-    {% for task in tasks %}
-    <div class="card mb-3">
-        <div class="card-body">
-            <h5 class="card-title">
-                {% if task.done == False %}&#9201;{% else %}&#9989;{% endif %}
-                {{ task.title }}
-            </h5>
-            <p class="card-text">{{ task.description }}</p>
-            <p class="card-text"><small class="text-muted">Project: {{ task.project.name }}</small></p>
-            <div class="d-flex justify-content-end">
-                {% csrf_token %}
-                <button class="btn btn-danger mr-2">Delete</button>
-                <button class="btn btn-success">&#x2705 Done</button>
+    <div class="row">
+        {% for task in tasks %}
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {% if task.done == False %}&#9201;{% else %}&#9989;{% endif %}
+                        {{ task.title }}
+                    </h5>
+                    <p class="card-text">{{ task.description }}</p>
+                    <p class="card-text"><small class="text-muted">Project: {{ task.project.name }}</small></p>
+                    <div class="d-flex justify-content-end">
+                        {% csrf_token %}
+                        <button class="btn btn-danger mr-2">Delete</button>
+                        <button class="btn btn-success">&#x2705 Done</button>
+                    </div>
+                </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 
 {% endblock %}
