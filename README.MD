@@ -1,6 +1,6 @@
 
 # My Site Task
-![My Site Task Logo](https://github.com/s3codecL/mySite/blob/main/myapp/static/logo_mysite_task.png)
+![My Site Task Logo](https://github.com/s3codecL/mySite/blob/main/myapp/static/logo_mysite_task_resized.png)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/yourusername/yourrepository)
 ![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/yourrepository)
