@@ -5,7 +5,7 @@ from .forms import CreateNewTask, CreateNewProject
 
 # Create your views here.
 def index(request):
-    title = 'Welcome to Django!'
+    title = 'Welcome to Django! My Site Task'
     return render(request, 'index.html', {
         'title': title
     })
@@ -55,8 +55,8 @@ def create_project(request):
 
 def project_detail(request, id):
     project = get_object_or_404(Project, id=id)
-    task = Task.objects.filter(project_id=id)
+    tasks = Task.objects.filter(project_id=id)
     return render(request, 'project/detail.html', {
         'project': project,
-        'task': task
+        'tasks': tasks
     })

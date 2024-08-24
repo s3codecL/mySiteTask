@@ -2,16 +2,30 @@
 
 {% block content %}
 
-<h1>Projects</h1>
+<div class="container mt-4">
+    <h1 class="text-center">Projects</h1>
 
-{% for project in projects %}
-
-    <article class="card">
-        <a href="{% url 'projects_detail' project.id %}">
-            <h1>{{ project.name }}</h1>
-        </a>
-    </article>
-
-{% endfor %}
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <a href="{% url 'projects_detail' project.id %}" class="text-decoration-none">
+                        <h5 class="card-title">{{ project.name }}</h5>
+                    </a>
+                    <ul class="list-group list-group-flush mt-3">
+                        {% for task in project.task_set.all %}
+                        <li class="list-group-item">
+                            {% if task.done == False %}&#9201;{% else %}&#9989;{% endif %}
+                            {{ task.title }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 
 {% endblock %}

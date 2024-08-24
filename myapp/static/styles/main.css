@@ -1,16 +1,19 @@
 body {
     background-color: #202020;
     color: whitesmoke;
+    display: flex; /* This makes the body a flex container */
+    flex-direction: column; /* Ensure content flows top to bottom */
+    align-items: center; /* Center content horizontally */
 }
 
 .navbar {
-    background: #404040;
-    padding: 5px 0;
+    width: 100%; /* Ensure navbar takes full width */
 }
 
 .navbar ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the nav items */
+    width: 100%; /* Ensure ul takes full width */
 }
 
 .navbar ul li {

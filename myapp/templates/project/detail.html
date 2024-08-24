@@ -1,14 +1,22 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
-    <h1>{{ project }}</h1>
 
-{% for task in tasks %}
-
-    <div class="card">
-        <h1>{{ task.title }}</h1>
+<div class="container mt-4">
+    <h1 class="text-center">{{ project.name }}</h1>
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title">Tasks</h5>
+            <ul class="list-group list-group-flush">
+                {% for task in tasks %}
+                <li class="list-group-item">
+                    {% if task.done == False %}&#9201;{% else %}&#9989;{% endif %}
+                    {{ task.title }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
+</div>
 
-{% endfor %}
 {% endblock %}
-{# nota: esta es una tarea #}

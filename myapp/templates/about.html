@@ -2,22 +2,27 @@
 
 {% block content %}
 
-    <h1>About</h1>
+<div class="container mt-4">
+    <h1 class="text-center">About</h1>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <p class="text-center mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Adipisci alias amet animi aperiam aspernatur atque aut autem
+                beatae commodi consequatur corporis cumque cupiditate delectus
+                doloremque doloribus ducimus ea eius eligendi eos error est eum
+                eveniet ex excepturi explicabo facere fuga fugiat fugit harum id
+                illum impedit in incidunt ipsa iure iusto labore laudantium magnam
+                magni maiores maxime minima minus molestiae mollitia natus nemo neque
+                nihil nisi nobis non nulla numquam obcaecati odio officia omnis optio
+                pariatur perferendis perspiciatis placeat possimus praesentium provident
+                quae quam qui quia quibusdam quidem quisquam quo ratione recusandae reiciendis
+                rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt
+                suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate
+                voluptatem voluptatum.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Adipisci alias amet animi aperiam aspernatur atque aut autem
-    beatae commodi consequatur corporis cumque cupiditate delectus
-    doloremque doloribus ducimus ea eius eligendi eos error est eum
-    eveniet ex excepturi explicabo facere fuga fugiat fugit harum id
-    illum impedit in incidunt ipsa iure iusto labore laudantium magnam
-    magni maiores maxime minima minus molestiae mollitia natus nemo neque
-    nihil nisi nobis non nulla numquam obcaecati odio officia omnis optio
-    pariatur perferendis perspiciatis placeat possimus praesentium provident
-    quae quam qui quia quibusdam quidem quisquam quo ratione recusandae reiciendis
-    rem repellat repudiandae rerum saepe sapiente sequi similique sit soluta sunt
-    suscipit tempora tenetur totam ullam unde vel veniam veritatis voluptas voluptate
-    voluptatem voluptatum.</p>
-
-<p>Website created by {{ username }} </p>
+            <p class="text-center">Website created by {{ username }}</p>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
