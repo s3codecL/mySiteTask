@@ -1,8 +1,12 @@
 {% extends "layouts/base.html" %}
 
+{% load static %}
+
 {% block content %}
 
 <h1>{{ title }}</h1>
+    
+    <img src="{% static 'logo_mysite_task.png' %}" alt="" width="100">
 <p>lorem ipsum</p>
 
 {% endblock %}
