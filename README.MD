@@ -12,11 +12,14 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?&logo=linux&logoColor=black)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?&logo=ubuntu&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?&logo=windows&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?&logo=django&logoColor=white)
+
 ![Python](https://img.shields.io/badge/Python-3776AB?&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?&logo=django&logoColor=white)
+![Jinja](https://img.shields.io/badge/jinja-white.svg?&logo=jinja&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?&logo=bootstrap&logoColor=white)
 
-
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?&logo=sqlite&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?&logo=postgresql&logoColor=white)
 
 ## Introducción
 My Site Task es una aplicación web desarrollada con Django para facilitar la gestión de tareas y proyectos. La aplicación permite a los usuarios crear, modificar, visualizar y eliminar proyectos y tareas, ofreciendo una interfaz intuitiva basada en Bootstrap para una experiencia de usuario fluida.
@@ -152,7 +155,9 @@ El código proporciona funcionalidades para:
 
 ## 3. Modelado de la Base de Datos
 
-### Estructura de la Base de Datos
+### Estructura de la Base de Datos 
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?&logo=sqlite&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?&logo=postgresql&logoColor=white)
 
 La base de datos contiene dos modelos principales: `Project` y `Task`.
 
