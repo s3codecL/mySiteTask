@@ -1,6 +1,6 @@
 
 # My Site Task
-![My Site Task Logo](./logo_mysite_task.png)
+![My Site Task Logo](https://github.com/s3codecL/mySite/blob/main/myapp/static/logo_mysite_task.png)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/yourusername/yourrepository)
 ![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/yourrepository)
@@ -70,9 +70,8 @@ Utilizamos `unittest` para las pruebas unitarias.
 
 ## Comunicación y Documentación
 
-- **Slack:** Comunicación interna.
-- **Notion:** Gestión de tareas y documentación del proyecto.
-- **GitHub:** Control de versiones y colaboración en código.
+- ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?&logo=notion&logoColor=white)
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?&logo=github&logoColor=white)
 
 ## Clonar y Configurar el Proyecto
 
@@ -128,7 +127,7 @@ python manage.py startapp nombre_app
 Recuerda añadir la nueva app al archivo `settings.py` en `INSTALLED_APPS`.
 
 
-# Documentación técnica
+# Documentación técnica del proyecto
 ![Django](https://img.shields.io/badge/Django-092E20?&logo=django&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?&logo=python&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?&logo=bootstrap&logoColor=white)
